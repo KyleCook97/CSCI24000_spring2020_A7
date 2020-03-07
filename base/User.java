@@ -18,14 +18,21 @@ public class User
 
     boolean checkID(String IDstring)
     {
-        if (ID == IDstring)
-        {
-            return true;
-        }
-        
-        else
-        {
-            return false;
-        }
+        return ID.equals(IDstring);
+    }
+
+    boolean checkPIN(String PINstring)
+    {
+        return PIN.equals(PINstring);
+    }
+
+    String getID()
+    {
+        return ID;
+    }
+
+    String getPIN()
+    {
+        return PIN;
     }
 }//end class def
