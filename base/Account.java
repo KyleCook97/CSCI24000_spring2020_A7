@@ -16,7 +16,13 @@ abstract class Account
 
     void withdraw(double amount)
     {
-        balance -= amount;
+        if (amount <= balance)
+        {
+            balance -= amount;
+            System.out.println("You deposited $" + amount + " into your account");
+        }
+        else 
+            System.out.println("You are attempting to withdraw more than your current balance.");
     }//end withdraw
 
     void deposit(double amount)
@@ -28,4 +34,5 @@ abstract class Account
     {
         return balance;
     }//end getBalance
+
 }//end class def

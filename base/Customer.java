@@ -2,7 +2,7 @@ import java.io.Serializable;
 
 //Customer.java
 
-public class Customer extends User implements Serializable
+public class Customer extends User
 {
     Customer()
     {

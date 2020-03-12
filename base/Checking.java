@@ -11,4 +11,9 @@ public class Checking extends Account
     {
         balance = B;
     }//end overloaded constructor
+
+    void setBalance(double bal)
+    {
+        balance = bal;
+    }//end setBalance
 }//end class def

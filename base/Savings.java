@@ -14,4 +14,14 @@ public class Savings extends Account
         balance = B;
         interest = I;
     }//end overloaded constructor
+
+    public double getInterest()
+    {
+        return interest;
+    }
+    
+    void setBalance(double bal)
+    {
+        balance = bal;
+    }//end setBalance
 }//end class def
